@@ -7,9 +7,9 @@ public class ConsoleProgress {
                 () -> {
                     while (!Thread.currentThread().isInterrupted()) {
                         try {
-                            for (int i = 0; i < process.length; i++) {
+                            for (char charVar : process) {
                                 Thread.sleep(500);
-                                System.out.print("\rLoading : " + process[i]);
+                                System.out.print("\rLoading : " + charVar);
                             }
                         } catch (InterruptedException e) {
                             e.printStackTrace();
