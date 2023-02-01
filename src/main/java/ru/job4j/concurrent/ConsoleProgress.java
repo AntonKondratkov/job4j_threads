@@ -12,7 +12,7 @@ public class ConsoleProgress {
                                 System.out.print("\rLoading : " + charVar);
                             }
                         } catch (InterruptedException e) {
-                            e.printStackTrace();
+                            Thread.currentThread().interrupt();
                         }
                     }
                 }
