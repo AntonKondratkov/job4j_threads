@@ -11,6 +11,7 @@ import net.jcip.annotations.ThreadSafe;
 
 @ThreadSafe
 public final class ParseFile {
+
     @GuardedBy("this")
     private final File file;
 

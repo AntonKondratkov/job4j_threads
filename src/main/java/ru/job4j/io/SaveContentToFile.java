@@ -9,11 +9,11 @@ import net.jcip.annotations.GuardedBy;
 import net.jcip.annotations.ThreadSafe;
 
 @ThreadSafe
-public final class saveContentToFile {
+public final class SaveContentToFile {
     @GuardedBy("this")
     private final File file;
 
-    public saveContentToFile(File file) {
+    public SaveContentToFile(File file) {
         this.file = file;
     }
 
