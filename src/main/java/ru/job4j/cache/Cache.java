@@ -1,6 +1,6 @@
-package ru.job4j.threads;
+package ru.job4j.cache;
 /**
- * Класс показывает один из способов синхронизации метода.
+ * Класс показывает один из способов синхронизации метода
  * @author Anton Kondratkov
  * @since 06.05.2024
  */
