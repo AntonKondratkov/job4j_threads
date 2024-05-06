@@ -7,7 +7,7 @@ package ru.job4j.cache;
 public final class Cache {
     private static Cache cache;
 
-    public static Cache getInstance() {
+    public synchronized static Cache getInstance() {
         if (cache == null) {
             cache = new Cache();
         }
