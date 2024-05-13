@@ -1,4 +1,4 @@
-package ru.job4j.DCLSingleton;
+package ru.job4j.singleton;
 
 public final class DCLSingleton {
     /*
