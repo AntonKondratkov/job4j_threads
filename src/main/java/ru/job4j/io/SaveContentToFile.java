@@ -8,6 +8,14 @@ import java.io.OutputStream;
 import net.jcip.annotations.GuardedBy;
 import net.jcip.annotations.ThreadSafe;
 
+/**
+ * Поправьте код с ошибками в коде.
+ * - Избавиться от get set за счет передачи File в конструктор.
+ * - Ошибки в многопоточности. Сделать класс Immutable. Все поля final.
+ * - Ошибки в IO. Не закрытые ресурсы. Чтение и запись файла без буфера.
+ * - Нарушен принцип единой ответственности. Тут нужно сделать два класса.
+ * - Методы getContent написаны в стиле копипаста. Нужно применить шаблон стратегия. content(Predicate<Character> filter)
+ */
 @ThreadSafe
 public final class SaveContentToFile {
     @GuardedBy("this")
